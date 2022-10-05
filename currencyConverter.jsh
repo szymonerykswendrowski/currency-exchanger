@@ -9,7 +9,7 @@ while (!finished) {
     System.out.println("What would you like to do?");
     System.out.println("   1 - Exchange pounds into euro");
     System.out.println("   2 - Exchange euro into pounds");
-    System.out.println("   0 - Exit the program");
+    System.out.println("   3 - Exit the program");
     System.out.println();
     System.out.print(  "> ");
     int choice = Integer.parseInt(System.console().readLine());
@@ -26,7 +26,7 @@ while (!finished) {
 	  pounds = euro * poundOverEuroRatio;
 	  System.out.println(euro + "€ will give you £" + pounds);
 	  break;
-    case 0: 
+    case 3: 
 	  finished = true;
 	  break;
     default: 
